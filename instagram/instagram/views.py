@@ -4,7 +4,7 @@ from __future__ import unicode_literals
 
 from datetime import datetime
 from django.contrib.auth.hashers import make_password, check_password
-from models import UserModel, SessionToken
+from demoapp.models import UserModel, SessionToken
 from demoapp.forms import SignUpForm, LoginForm, PostForm
 from django.utils import timezone
 from datetime import timedelta
