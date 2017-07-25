@@ -1,0 +1,50 @@
+<!Doctype html>
+<html>
+	<head>
+		<title>sign up</title>
+
+		<meta charset="utf-8">
+    		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    		<meta name="viewport" content="width=device-width, initial-scale=1"
+
+		<!--Bootstrap-->
+		<link href="css/bootstrap.css" rel="stylesheet">
+	</head>
+	<body>
+		<div>
+			<h1>instagram clone</h1>
+			<h3>signup</h3>
+			<h4> today's date and time :{{ today}}</h4>
+			<form method="POST">
+			{% csrf_token %}
+       <div>
+           <label for="username">Username: </label>
+           <input id="username" name="username" value="{{ username }}" type="text">
+       </div>
+
+       <div>
+           <label for="name">Name: </label>
+           <input id="name" name="name" value="{{name}}" type="text">
+       </div>
+
+       <div>
+           <label for="email">Email: </label>
+           <input id="email" name="email" value="email" type="text">
+       </div>
+
+       <div>
+           <label for="password">Password: </label>
+           <input id="password" name="password" value="{{password}}" type="password">
+       </div>
+           <input value="Sign Up" type="submit">
+    </form>
+
+		</div>
+
+		<!--Javascript files-->
+		<!--Jquery library-->
+		<script src="js/jquery-3.2.1.js"></script>
+		<!--Bootstrap js Library-->
+		<script src="js/bootstrap.js"></script>
+	</body>
+</html>
