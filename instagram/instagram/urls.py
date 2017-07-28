@@ -1,3 +1,4 @@
+from __future__ import  unicode_literals
 """instagram URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
@@ -14,15 +15,18 @@ Including another URLconf
     2. Add a URL to urlpatterns:  url(r'^blog/', include('blog.urls'))
 """
 from django.conf.urls import url
-from django.contrib import admin
-from django.conf import settings
-from views import signup_view
-from views import login_view
-from django.conf.static import static
-
+from demoapp.views import signup_view, login_view, feed_view, post_view, like_view, comment_view
 
 urlpatterns = [
-    url(r'^admin/', admin.site.urls),
-    url(r'^signup', signup_view),
-    url(r'^login/', login_view),
+
 ]
+
+urlpatterns = [
+ url('post/', post_view),
+    url('feed/', feed_view),
+    url('like/', like_view),
+    url('comment/', comment_view),
+    url('login/', login_view),
+    url('signup/', signup_view)
+]
+

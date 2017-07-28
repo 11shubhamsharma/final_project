@@ -1,32 +1,39 @@
-<!Doctype html>
-<html>
-	<head>
-		<title>login </title>
 
 		<meta charset="utf-8">
     		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-    		<meta name="viewport" content="width=device-width, initial-scale=1"
+    		<meta name="viewport" content="width=device-width, initial-scale=1">
 
 		<!--Bootstrap-->
 		<link href="css/bootstrap.css" rel="stylesheet">
+		<style>
+body {
+        background-image: url("http://www.wallhd4.com/wp-content/uploads/2015/04/scotland-wallpapers-hd-18.jpeg");
+}
+
+</style>
 	</head>
-	<body>
+	<body >
+	<td colspan=2><center><font size=4><b>
+        <div class="background-image"></div>
+        <div class="content">
+
+        </div>
 		<div>
-			<h1>instagram clone</h1>
-			<h3>login</h3>
+			<h1>INSTAGRAM CLONE</h1>
+			<h3>LOGIN</h3>
 
 			<form method="post">
 			{% csrf_token %}
        <div>
            <label for="username">Username: </label>
            <input id="username" name="username" value="" type="text">
-       </div>
+       </div><br>
 
        <div>
            <label for="password">Password: </label>
            <input id="password" name="password" value="" type="password">
-       </div>
-           <input value="login" type="submit">
+       </div><br>
+           <input value="LOGIN"style="background-color:#07c ;height:35px; width:100px" type="submit">
     </form>
 
 		</div>

@@ -5,41 +5,59 @@
 
 		<meta charset="utf-8">
     		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-    		<meta name="viewport" content="width=device-width, initial-scale=1"
+    		<meta name="viewport" content="width=device-width, initial-scale=1">
 
 		<!--Bootstrap-->
 		<link href="css/bootstrap.css" rel="stylesheet">
+        		<style>
+body {
+        background-image: url("http://cdn.wallpapersafari.com/80/28/C36XHL.jpg");
+}
+
+
+</style>
 	</head>
 	<body>
+
+
+
+        <td colspan=2><center><font size=4><b>
+        <div class="background-image"></div>
+        <div class="content">
+
+        </div>
 		<div>
-			<h1>instagram clone</h1>
-			<h3>signup</h3>
-			<h4> today's date and time :{{ today}}</h4>
+			<h1 style="color:white;">INSTAGRAM CLONE</h1>
+			<h3>SIGNUP</h3>
+
 			<form method="POST">
 			{% csrf_token %}
        <div>
            <label for="username">Username: </label>
            <input id="username" name="username" value="{{ username }}" type="text">
-       </div>
+       </div><br>
 
        <div>
            <label for="name">Name: </label>
-           <input id="name" name="name" value="{{name}}" type="text">
-       </div>
+           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input id="name" name="name" value="{{name}}" type="text">
+       </div><br>
 
        <div>
-           <label for="email">Email: </label>
-           <input id="email" name="email" value="email" type="text">
-       </div>
+           <label for="email"> Email: </label>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input id="email" name="email" value="email" type="text">
+       </div><br>
 
        <div>
            <label for="password">Password: </label>
            <input id="password" name="password" value="{{password}}" type="password">
-       </div>
-           <input value="Sign Up" type="submit">
+       </div><br><br>
+           <input value="Sign Up"style="background-color:#07c ;height:35px; width:100px" type="submit">
     </form>
 
-		</div>
+
+		</div><br><br>
+            <div><h3>Already a user?</h3><a href="/login/">LOGIN</a> </div>
+
 
 		<!--Javascript files-->
 		<!--Jquery library-->
