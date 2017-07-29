@@ -10,6 +10,8 @@
     background:url('2.jpg');
     background-size:100% 620px;
     padding-top:80px;
+        background-image: url("http://wallpaperswide.com/download/water_lily-wallpaper-2560x1440.jpg");
+
 }
 .nav{
     color:white;
@@ -24,13 +26,20 @@
     opacity: .9;
 }
     </style>
-</head>
-<body>
-<form action = "" method ="POST" enctype="multipart/form-data">
+</head><br><br>
+
+  <td colspan=2><center><font size=4><b>
+        <div class="background-image"></div>
+        <div class="content">
+
+        </div>
+
+
+<form action = "" method ="POST" enctype="multipart/form-data"><br><br><br><br><br><br>
 	{% csrf_token %}
-	Image<input type="file" name="image"    value = "{{ image }}"></br></br>
-	Caption<input type="text" name="caption" value="{{ caption }}"></br></br>
-		   <input type="submit" name="submit" class="btn btn-default" value="POST">
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Image: &nbsp;&nbsp;&nbsp;&nbsp;<input type="file" name="image"    value = "{{ image }}"></br></br>
+	Caption:&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="caption" value="{{ caption }}"></br></br>
+		   <input type="submit" name="submit"  style="background-color:#07c ;height:35px; width:100px"class="btn btn-default" value="POST">
 </form>
 </body>
 </html>

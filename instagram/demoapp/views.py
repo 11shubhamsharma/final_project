@@ -27,6 +27,8 @@ def signup_view(request):
             # return redirect('login/')
         else:
             return HttpResponse("from data is not valid")
+
+
     else:
         form = SignUpForm()
 
