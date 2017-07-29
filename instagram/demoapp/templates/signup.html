@@ -2,20 +2,41 @@
 <html>
 	<head>
 		<title>sign up</title>
-
+             <style>
+body{
+background-repeat: no-repeat;
+background-position: 50 50;
+}
+</style>
+        		<script >
+var imgs=new Array()
+imgs[0]="http://cdn.wallpapersafari.com/80/28/C36XHL.jpg";
+imgs[1]="http://www.chainimage.com/images/pure-technology-high-definition-wallpapers-hd-wallpapers.jpg";
+imgs[2]="http://www.hdnicewallpapers.com/1920x1080/Beautiful_Flower_HD_Image.jpg";
+var speed=2000
+var processed=new Array()
+for (i=0;i<imgs.length;i++){
+processed[i]=new Image();
+processed[i].src=imgs[i];
+}
+var inc=-1;
+function slideimg(){
+if (inc<imgs.length-1)
+inc++;
+else
+inc=0;
+document.body.background=processed[inc].src;
+}
+if (document.all||document.getElementById)
+window.onload=new Function('setInterval("slideimg()",speed)');
+</script>
 		<meta charset="utf-8">
     		<meta http-equiv="X-UA-Compatible" content="IE=edge">
     		<meta name="viewport" content="width=device-width, initial-scale=1">
 
 		<!--Bootstrap-->
 		<link href="css/bootstrap.css" rel="stylesheet">
-        		<style>
-body {
-        background-image: url("http://cdn.wallpapersafari.com/80/28/C36XHL.jpg");
-}
 
-
-</style>
 	</head>
 	<body>
 
